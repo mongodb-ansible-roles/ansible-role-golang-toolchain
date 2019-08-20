@@ -1,0 +1,7 @@
+---
+- name: Unarchive golang toolchain
+  unarchive:
+    creates: /opt/golang
+    dest: /opt
+    remote_src: true
+    src: "{{ toolchain_golang_url }}"

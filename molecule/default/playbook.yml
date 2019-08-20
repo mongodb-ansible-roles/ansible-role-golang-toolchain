@@ -1,0 +1,8 @@
+---
+- become: true
+  name: Converge
+  hosts: all
+  roles:
+    - role: ansible-role-toolchain-golang
+      vars:
+        toolchain_golang_version: 001ac697f8f64d5d89625373a0ffa6aae13270a8
