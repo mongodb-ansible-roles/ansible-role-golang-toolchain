@@ -1,4 +1,4 @@
-Ansible role for toolchain-golang
+Ansible role for golang-toolchain
 ==================================
 
 Installs the golang toolchain
@@ -15,7 +15,7 @@ Role Variables
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-------:|:--------:|
-| toolchain\_golang\_version | SHA of the golang toolchain you want to download | string | "" | no |
+| toolchain\_sha | SHA of the golang toolchain you want to download | string | "" | no |
 
 Dependencies
 ------------
@@ -28,9 +28,9 @@ Example Playbook
 ```yaml
 - hosts: all
   roles:
-    - role: ansible-role-toolchain-golang
+    - role: ansible-role-golang-toolchain
       vars:
-        toolchain_golang_version: "001ac697f8f64d5d89625373a0ffa6aae13270a8"
+        toolchain_sha: "001ac697f8f64d5d89625373a0ffa6aae13270a8"
 ```
 
 License
