@@ -4,6 +4,8 @@ describe directory('/opt/golang') do
   it { should exist }
 end
 
+# rubocop:disable LineLength
+
 describe command('GOROOT=/opt/golang/go1.7 /opt/golang/go1.7/bin/go version') do
   its('stdout') { should eq "go version go1.7.6 linux/amd64\n" }
 end
@@ -27,3 +29,5 @@ end
 describe command('GOROOT=/opt/golang/go1.12 /opt/golang/go1.12/bin/go version') do
   its('stdout') { should eq "go version go1.12.8 linux/amd64\n" }
 end
+
+# rubocop:enable LineLength
