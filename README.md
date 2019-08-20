@@ -3,7 +3,7 @@ Ansible role for golang-toolchain
 
 Installs the golang toolchain
 
-[![CircleCI](https://img.shields.io/circleci/build/github/mongodb-ansible-roles/ansible-role-toolchain-golang/master?style=flat-square)](https://circleci.com/gh/mongodb-ansible-roles/ansible-role-toolchain-golang)
+[![CircleCI](https://img.shields.io/circleci/build/github/mongodb-ansible-roles/ansible-role-golang-toolchain/master?style=flat-square)](https://circleci.com/gh/mongodb-ansible-roles/ansible-role-golang-toolchain)
 
 Requirements
 ------------
