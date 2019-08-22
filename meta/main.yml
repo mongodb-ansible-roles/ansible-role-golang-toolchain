@@ -9,7 +9,8 @@ galaxy_info:
       versions:
         - buster
     - name: osx
-      versions:
+      versions2
+        - 10.12
         - 10.14
   galaxy_tags:
     - golang
