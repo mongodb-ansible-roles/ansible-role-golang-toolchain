@@ -1,3 +1,4 @@
 ---
-toolchain_sha: ""
-toolchain_dest: ""
+golang_toolchain_dest: ""
+golang_toolchain_sha: ""
+golang_toolchain_url: https://s3.amazonaws.com/boxes.10gen.com/build/toolchain/mongo-golang-toolchain-{{ distro }}-{{ architecture }}-{{ golang_toolchain_sha }}.tar.gz
