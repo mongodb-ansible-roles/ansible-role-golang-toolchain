@@ -1,2 +1,1 @@
 ---
-toolchain_golang_url: https://s3.amazonaws.com/boxes.10gen.com/build/toolchain/mongo-golang-toolchain-linux-amd64-{{ toolchain_golang_version }}.tar.gz
