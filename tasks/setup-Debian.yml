@@ -1,6 +1,4 @@
 ---
-- name: Download golang toolchain
-  include_role:
-    name: ansible-role-toolchain
-  vars:
+- name: Set golang toolchain url
+  set_fact:
     toolchain_url: https://s3.amazonaws.com/boxes.10gen.com/build/toolchain/mongo-golang-toolchain-linux-amd64-{{ toolchain_sha }}.tar.gz
