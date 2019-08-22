@@ -8,5 +8,8 @@ galaxy_info:
     - name: debian
       versions:
         - buster
+    - name: osx
+      versions:
+        - 10.14
   galaxy_tags:
     - golang
