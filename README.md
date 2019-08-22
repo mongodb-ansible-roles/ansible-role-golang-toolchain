@@ -16,11 +16,12 @@ Role Variables
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-------:|:--------:|
 | toolchain\_sha | SHA of the golang toolchain you want to download | string | "" | yes |
+| toolchain\_dest | Destination to download toolchain | string | "" | yes |
 
 Dependencies
 ------------
 
-None
+- [`mongodb-ansible-roles.ansible-role-toolchain`](https://github.com/mongodb-ansible-roles/ansible-role-toolchain)
 
 Example Playbook
 ----------------
@@ -31,6 +32,7 @@ Example Playbook
     - role: ansible-role-toolchain-golang
       vars:
         toolchain_sha: "001ac697f8f64d5d89625373a0ffa6aae13270a8"
+        toolchain_dest: /opt
 ```
 
 License
