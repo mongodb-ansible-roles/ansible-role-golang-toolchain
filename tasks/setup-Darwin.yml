@@ -1,4 +1,1 @@
 ---
-- name: Set golang toolchain url
-  set_fact:
-    toolchain_url: https://s3.amazonaws.com/boxes.10gen.com/build/toolchain/mongo-golang-toolchain-darwin-amd64-{{ toolchain_sha }}.tar.gz
