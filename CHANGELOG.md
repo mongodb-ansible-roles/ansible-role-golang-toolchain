@@ -1,3 +1,21 @@
+# [1.1.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.0.0...v1.1.0) (2019-08-24)
+
+
+### Bug Fixes
+
+* added destination to molecule playbook ([c35efc3](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/c35efc3))
+* added vars to create toolchain url ([1628588](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/1628588))
+* changed role to only set variable for subrole ([f109435](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/f109435))
+* changed variable name to correct name ([8e3c2a2](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/8e3c2a2))
+* moved dependencies block to correct location ([6d0dfb9](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/6d0dfb9))
+* removed unused tasks ([5a6754a](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/5a6754a))
+
+
+### Features
+
+* added toolchain dependency role in meta ([ad8e950](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/ad8e950))
+* added toolchain_dest variable ([008b030](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/008b030))
+
 # 1.0.0 (2019-08-22)
 
 
