@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.1.0...v1.1.1) (2019-08-29)
+
+
+### Bug Fixes
+
+* added golang prefix to variable ([4036e41](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/4036e41))
+
 # [1.1.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.0.0...v1.1.0) (2019-08-24)
 
 
