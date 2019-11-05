@@ -1,6 +1,21 @@
 ---
-- include_tasks: setup-Debian.yml
-  when: ansible_os_family == "Debian"
+- name: Remove old toolchain
+  become: true
+  file:
+    path: "{{ golang_toolchain_final_dest }}"
+    state: absent
+  when:
+    - toolchain_archive_contents.changed
 
-- include_tasks: setup-Darwin.yml
-  when: ansible_os_family == "Darwin"
+- name: Move golang directory from tmp to opt
+  become: true
+  command: mv /tmp/golang {{ golang_toolchain_final_dest }}
+  when:
+    - toolchain_archive_contents.changed
+
+- name: Create version file
+  become: true
+  template:
+    src: version
+    dest: "{{ golang_toolchain_final_dest }}/toolchain_version"
+
