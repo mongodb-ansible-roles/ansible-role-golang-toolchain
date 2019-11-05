@@ -1,8 +1,10 @@
 ---
 dependencies:
   - role: ansible-role-toolchain
-    toolchain_url: "{{ golang_toolchain_url }}"
-    toolchain_dest: "{{ golang_toolchain_dest }}"
+    vars:
+      toolchain_url: "{{ golang_toolchain_url }}"
+      toolchain_version: "{{ golang_toolchain_sha }}"
+      toolchain_final_dest: "{{ golang_toolchain_final_dest }}"
 galaxy_info:
   author: MongoDB
   description: Installs the golang toolchain
