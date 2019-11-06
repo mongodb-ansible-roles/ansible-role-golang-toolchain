@@ -15,6 +15,6 @@
 
 - name: Create version file
   become: true
-  template:
-    src: version
+  copy:
+    content: "{{ golang_toolchain_sha }}"
     dest: "{{ golang_toolchain_final_dest }}/toolchain_version"
