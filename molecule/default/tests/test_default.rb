@@ -4,6 +4,11 @@ describe directory('/opt/golang') do
   it { should exist }
 end
 
+describe file('/opt/golang/toolchain_version') do
+  it { should exist }
+  its('content') { should match(/testing_golang_sha/) }
+end
+
 # rubocop:disable LineLength
 
 describe command('GOROOT=/opt/golang/go1.7 /opt/golang/go1.7/bin/go version') do
