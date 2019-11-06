@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.1.1...v1.2.0) (2019-11-06)
+
+
+### Bug Fixes
+
+* Add var to meta so vars are passed correctly ([26c6c95](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/26c6c952e8993467e000689e3f5909206caf0731))
+* Changed golang dest variable name ([2486a8c](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/2486a8cd3fd222bcdeb89724647a27155793fc31))
+
+
+### Features
+
+* Added logic to move toolchain to correct dir ([5c65789](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/5c65789c4a972e9da4a241152549c235b87a00c7))
+* Added toolchain_version file ([91e2216](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/91e2216789ce31babdaa982f09f1ea04885d8b98))
+
 ## [1.1.1](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.1.0...v1.1.1) (2019-08-29)
 
 
