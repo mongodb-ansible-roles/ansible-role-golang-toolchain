@@ -6,3 +6,4 @@
     - role: ansible-role-golang-toolchain
       vars:
         golang_toolchain_url: https://ansible-molecule-test.s3.amazonaws.com/test_golangtoolchain.tar.gz
+        golang_toolchain_sha: testing_golang_sha
