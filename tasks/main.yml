@@ -18,4 +18,3 @@
   template:
     src: version
     dest: "{{ golang_toolchain_final_dest }}/toolchain_version"
-
