@@ -28,6 +28,10 @@ Requirements
 
 `ansible-role-toolchain` must be up to date in your `requirements.yml`
 
+    ---
+    - src: git+https://github.com/mongodb-ansible-roles/ansible-role-toolchain.git
+      version: v1.1.0
+
 Role Variables
 --------------
 
