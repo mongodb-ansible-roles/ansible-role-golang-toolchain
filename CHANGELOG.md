@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.2.0...v1.3.0) (2020-01-14)
+
+
+### Features
+
+* Add RedHat support and PPC support ([52c751e](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/52c751e3be80de4537822375881b1ecca62070d0))
+
 # [1.2.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.1.1...v1.2.0) (2019-11-06)
 
 
