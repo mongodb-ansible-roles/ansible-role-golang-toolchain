@@ -23,6 +23,12 @@
         inspec_download_sha256sum: c3d3fcb89b746f6378e27c0b318f61a8cda8784f4354306a866c70b945d52cec
       when: ansible_os_family == "RedHat" and ansible_distribution_major_version == "7"
 
+    - name: Setting variables (CentOS 8 / RHEL 8)
+      set_fact:
+        inspec_download_url: "https://packages.chef.io/files/stable/inspec/4.18.51/el/8/inspec-4.18.51-1.el7.x86_64.rpm"
+        inspec_download_sha256sum: 2c43529b7fe57db7a6c2290c1a9b9aa706827647e39a8191822e223886872cbd
+      when: ansible_os_family == "RedHat" and ansible_distribution_major_version == "8"
+
     - name: Setting variables (Debian 8 / Ubuntu 14.04)
       set_fact:
         inspec_download_url: "https://packages.chef.io/files/stable/inspec/2.2.34/ubuntu/14.04/inspec_2.2.34-1_amd64.deb"
@@ -60,6 +66,12 @@
         state: latest
       when: ansible_pkg_mgr == "yum"
 
+    - name: Install Inspec (dnf)
+      yum:
+        name: "{{ inspec_download_source_dir }}/{{ inspec_download_url.split('/')[-1] }}"
+        state: latest
+      when: ansible_pkg_mgr == "dnf"
+
     - name: Create Molecule directory for test files
       file:
         path: "{{ inspec_test_directory }}"
@@ -75,6 +87,10 @@
     - name: Register test files
       shell: "ls {{ inspec_test_directory }}/test_*.rb"
       register: test_files
+
+    - name: Accept Inspec license
+      command: "{{ inspec_bin }} --chef-license=accept"
+      when: ansible_os_family == "RedHat" and ansible_distribution_major_version == "8"
 
     - name: Execute Inspec tests
       command: "{{ inspec_bin }} exec {{ item }}"
