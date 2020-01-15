@@ -1,4 +1,4 @@
----
+--
 # This is an example playbook to execute inspec tests.
 # Tests need distributed to the appropriate ansible host/groups
 # prior to execution by `inspec exec`.
@@ -29,7 +29,7 @@
         inspec_download_sha256sum: 2c43529b7fe57db7a6c2290c1a9b9aa706827647e39a8191822e223886872cbd
       when:
         - ansible_os_family == "RedHat"
-        - ansible_distribution_major_version == "8"
+        - ansible_distribution_major_version is version("8", "==")
 
     - name: Setting variables (Debian 8 / Ubuntu 14.04)
       set_fact:
@@ -94,7 +94,7 @@
       command: "{{ inspec_bin }} --chef-license=accept"
       when:
         - ansible_os_family == "RedHat"
-        - ansible_distribution_major_version == "8"
+        - ansible_distribution_major_version is version("8", "==")
 
     - name: Execute Inspec tests
       command: "{{ inspec_bin }} exec {{ item }}"
