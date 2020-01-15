@@ -4,9 +4,9 @@ jobs:
     docker:
       - image: quay.io/mongodb-build/molecule
       - image: registry.redhat.io/ubi8
-          auth:
-            username: $RHN_USER
-            password: $RHN_PASS
+        auth:
+          username: $RHN_USER
+          password: $RHN_PASS
     steps:
       - checkout
       - setup_remote_docker
