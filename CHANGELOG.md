@@ -1,3 +1,20 @@
+## [1.3.1](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.3.0...v1.3.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* Added context to test step in Circle ([8960996](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/89609962e2f2fa7c1eaa3e691d5947afa6d09426))
+* Fixed spacing error in circle config ([3c996e6](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/3c996e69fdb4d19ddd2bd57979b4f383b9e49385))
+* Install python3 when using dnf ([19746fa](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/19746fab7ed1be77092dc017aad272ead4616c50))
+* Lint complains about using handlers ([33aabcb](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/33aabcbd03be856a51a4669078b0d8dee13bd9a0))
+* Makefile needs environment variables for RHN ([9252b01](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/9252b01a94be153e293bc1f85d1b059e0cf07e2d))
+* Replace missing header in yaml file ([772c551](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/772c551c4e7d9738c200ae772849bf2a7b1e4b73))
+
+
+### Reverts
+
+* Undo changes to make file ([3a8f0c3](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/3a8f0c358f139845f303715e8ef148b254afcd7b))
+
 # [1.3.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.2.0...v1.3.0) (2020-01-14)
 
 
