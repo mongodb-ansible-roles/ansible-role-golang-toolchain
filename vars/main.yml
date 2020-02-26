@@ -3,6 +3,7 @@ distro_dict:
   Debian: linux
   Darwin: darwin
   RedHat: linux
+  RedHat7: linux
 distro: "{{ distro_dict[ansible_os_family] }}"
 architecture_dict:
   x86_64: amd64
