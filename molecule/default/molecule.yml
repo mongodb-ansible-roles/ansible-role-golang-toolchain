@@ -9,12 +9,9 @@ platforms:
   - name: debian9
     image: debian:9
   - name: rhel8
-    image: ubi8
-    registry:
-      url: registry.redhat.io
-      credentials:
-        username: ${REDHAT_REGISTRY_SERVICE_ACCOUNT_USERNAME}
-        password: ${REDHAT_REGISTRY_SERVICE_ACCOUNT_PASSWORD}
+    image: registry.redhat.io/ubi8
+  - name: rhel7
+    image: registry.redhat.io/ubi7
 provisioner:
   name: ansible
   lint:
