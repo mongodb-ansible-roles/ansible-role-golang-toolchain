@@ -8,4 +8,5 @@ distro: "{{ distro_dict[ansible_os_family] }}"
 architecture_dict:
   x86_64: amd64
   ppc64le: ppc64le
+  s390x: s390x
 architecture: "{{ architecture_dict[ansible_architecture] }}"
