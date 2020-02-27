@@ -14,6 +14,10 @@ galaxy_info:
     - name: debian
       versions:
         - buster
+    - name: el
+      versions:
+        - 7
+        - 8
     - name: MacOSX
       versions:
         - 10.12
