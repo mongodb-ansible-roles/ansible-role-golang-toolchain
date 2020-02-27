@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.3.1...v1.4.0) (2020-02-27)
+
+
+### Features
+
+* Add rhel7 support ([a10adc9](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/a10adc952f53a35879dcc5cd78c1e3883bd2ac70))
+
 ## [1.3.1](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.3.0...v1.3.1) (2020-01-15)
 
 
