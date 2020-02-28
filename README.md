@@ -58,6 +58,20 @@ Example Playbook
         golang_toolchain_sha: "001ac697f8f64d5d89625373a0ffa6aae13270a8"
 ```
 
+Testing
+-------
+
+Testing for this role in GitHub Actions and/or locally requires you to set up secrets and/or environment variables respectively.
+
+The required variables you need to set up are:
+1. `REDHAT_REGISTRY_SERVICE_ACCOUNT_USERNAME`
+2. `REDHAT_REGISTRY_SERVICE_ACCOUNT_PASSWORD`
+3. `RHEL80_ZSERIES_DEV`
+4. `PRIVATE_KEY`
+
+`RHEL80_ZSERIES_DEV` is formatted as username@host for the rhel80-zseries box
+`PRIVATE_KEY` is a private key that has access to the hosts
+
 License
 -------
 
