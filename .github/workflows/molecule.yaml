@@ -29,7 +29,7 @@ jobs:
         env:
           REDHAT_REGISTRY_SERVICE_ACCOUNT_USERNAME: ${{ secrets.REDHAT_REGISTRY_SERVICE_ACCOUNT_USERNAME }}
           REDHAT_REGISTRY_SERVICE_ACCOUNT_PASSWORD: ${{ secrets.REDHAT_REGISTRY_SERVICE_ACCOUNT_PASSWORD }}
+          RHEL80_ZSERIES_DEV: ${{ secrets.RHEL80_ZSERIES_DEV }}
 name: Molecule Test
 'on':
   - push
-  - pull_request
