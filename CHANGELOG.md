@@ -1,3 +1,16 @@
+# [1.5.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.4.0...v1.5.0) (2020-02-28)
+
+
+### Bug Fixes
+
+* Added missing requirements file to tests ([5f9ba82](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/5f9ba8258f5bf1456ed632d3a59c458512c4addf))
+* Using shell command instead of copy/template ([d6c54de](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/d6c54de4d730f8009898bd7e13f5bbfbd6df02bd))
+
+
+### Features
+
+* Add s390x support ([47d8dc0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/47d8dc0799fb684f0eb8449aa7d67efd502ada6d))
+
 # [1.4.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.3.1...v1.4.0) (2020-02-27)
 
 
