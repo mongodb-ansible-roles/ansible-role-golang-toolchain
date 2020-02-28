@@ -1,0 +1,17 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: delegated
+  identity_file: ~/.ssh/id_rsa
+lint: |
+  set -e
+  yamllint .
+  ansible-lint
+  flake8
+platforms:
+  - name: ${RHEL80_ZSERIES_DEV}
+provisioner:
+  name: ansible
+verifier:
+  name: testinfra

@@ -1,0 +1,11 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include ansible-role-golang-toolchain"
+      include_role:
+        name: "ansible-role-golang-toolchain"
+      vars:
+        golang_toolchain_url: https://ansible-molecule-test.s3.amazonaws.com/test_golangtoolchain.tar.gz
+        golang_toolchain_sha: testing_golang_sha
+        golang_toolchain_final_dest: /tmp/golang_test
