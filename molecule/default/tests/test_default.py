@@ -21,17 +21,17 @@ def test_golang_toolchain(host):
 """
 
     cmd = host.run("GOROOT=/opt/golang/go1.9 /opt/golang/go1.9/bin/go version")
-    assert cmd.stdout ==  """go version go1.9.7 linux/amd64
+    assert cmd.stdout == """go version go1.9.7 linux/amd64
 """
 
     cmd = host.run("GOROOT=/opt/golang/go1.10 /opt/golang/go1.10/bin/go version")
-    assert cmd.stdout ==  """go version go1.10.8 linux/amd64
+    assert cmd.stdout == """go version go1.10.8 linux/amd64
 """
 
     cmd = host.run("GOROOT=/opt/golang/go1.11 /opt/golang/go1.11/bin/go version")
-    assert cmd.stdout ==  """go version go1.11.9 linux/amd64
+    assert cmd.stdout == """go version go1.11.9 linux/amd64
 """
 
     cmd = host.run("GOROOT=/opt/golang/go1.12 /opt/golang/go1.12/bin/go version")
-    assert cmd.stdout ==  """go version go1.12.8 linux/amd64
+    assert cmd.stdout == """go version go1.12.8 linux/amd64
 """
