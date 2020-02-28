@@ -7,14 +7,15 @@
   when:
     - toolchain_archive_contents.changed
 
-- name: Move golang directory from tmp to opt
+- name: Move golang directory from tmp to {{ golang_toolchain_final_dest }}
   become: true
   command: mv /tmp/golang {{ golang_toolchain_final_dest }}
   when:
     - toolchain_archive_contents.changed
 
-- name: Create version file
+  # This is using shell because the copy and template module fail to run on a static host
+  # with a "host cannot be found error"
+- name: Create version file at {{ golang_toolchain_final_dest }}/toolchain_version
   become: true
-  copy:
-    content: "{{ golang_toolchain_sha }}"
-    dest: "{{ golang_toolchain_final_dest }}/toolchain_version"
+  shell: echo {{ golang_toolchain_sha }} > {{ golang_toolchain_final_dest }}/toolchain_version
+  changed_when: false
