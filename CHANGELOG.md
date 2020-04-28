@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.5.0...v1.6.0) (2020-04-28)
+
+
+### Features
+
+* Add Archlinux support ([#15](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/issues/15)) ([a7122fa](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/a7122fab4699531c712ef42385815f7dbfc2c442))
+
 # [1.5.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.4.0...v1.5.0) (2020-02-28)
 
 
