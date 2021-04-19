@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.7.0...v1.8.0) (2021-04-19)
+
+
+### Features
+
+* Use arm64 as arch for M1 ([3eb4bbd](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/3eb4bbd3e3072030187aab3d120f647c7b25ade9))
+
 # [1.7.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.6.0...v1.7.0) (2021-04-19)
 
 
