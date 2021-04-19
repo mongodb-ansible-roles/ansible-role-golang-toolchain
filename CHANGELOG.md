@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.6.0...v1.7.0) (2021-04-19)
+
+
+### Features
+
+* Add M1 Mac support ([7efba48](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/7efba48a6f8637bfbfd9320bec4977350083aa0b))
+
 # [1.6.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.5.0...v1.6.0) (2020-04-28)
 
 
