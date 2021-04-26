@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.8.0...v1.9.0) (2021-04-26)
+
+
+### Features
+
+* Add Suse support ([#16](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/issues/16)) ([bcee073](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/commit/bcee073d016c51a051e2a23852928a9f02a2a05f))
+
 # [1.8.0](https://github.com/mongodb-ansible-roles/ansible-role-golang-toolchain/compare/v1.7.0...v1.8.0) (2021-04-19)
 
 
